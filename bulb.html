@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULB</title>
+</head>
+<body style="text-align: center; background-color: black;">
+    <h1 style="color: goldenrod;">BULB UI CONTROL</h1>
+    <img style="width: 550px; height: 380px; border: 2px solid grey ;box-shadow: 1px 1px 2px 2px grey ;" id="bulb" src="https://freepngimg.com/save/31669-bulb-off-transparent-image/500x500" alt=""><br><br><br><br>
+    <div>
+        <button style="padding: 30px; border-radius: 34px; background-color: green;margin: 10px;" onclick="light(1)">LIGHT ON</button>
+        <button style="padding: 30px; border-radius: 34px; background-color: red; margin: 10px;"  onclick="light(0)">LIGHT OFF</button>
+    </div>
+    
+</body>
+<script>
+    function light(show){
+        let pic;
+        if (show == 0){
+            document.getElementById("bulb").src = "https://freepngimg.com/save/31669-bulb-off-transparent-image/500x500";
+        }else{
+            document.getElementById("bulb").src ="https://www.freeiconspng.com/thumbs/lightbulb-png/light-bulb-png-bulb-png1247-12.png";
+        }
+    }
+
+</script>
+</html>
